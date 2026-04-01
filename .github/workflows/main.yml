@@ -3,7 +3,7 @@ name: Deploy Website via FTP
 on:
   push:
     branches:
-      - main  # ถ้าคุณใช้ชื่อ branch อื่น เช่น master ให้เปลี่ยนตรงนี้ครับ
+      - main
 
 jobs:
   web-deploy:
@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4 # อัปเดตเป็น v4
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5 # อัปเดตเป็น version ล่าสุด
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /site/wwwroot/ton/banner-cms/
         protocol: ftp
-        port: 21
+        port: 990
