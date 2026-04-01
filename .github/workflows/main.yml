@@ -9,6 +9,9 @@ jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    env:
+      # แก้ไขคำเตือนเรื่อง Node.js 20
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
@@ -20,7 +23,8 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /site/wwwroot/ton/banner-cms/
-        # --- การตั้งค่าสำหรับ Azure FTPS Port 990 ---
+        # สำหรับ Azure Port 990 ให้ใช้ protocol: ftps เท่านั้น
         protocol: ftps
         port: 990
-        ftp-ssl: true
+        # ถ้ายัง Timeout ให้เพิ่มบรรทัดนี้ (หน่วยเป็นมิลลิวินาที)
+        timeout: 60000
