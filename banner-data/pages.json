@@ -1,0 +1,22 @@
+[
+    {
+        "key": "store",
+        "label": "Store"
+    },
+    {
+        "key": "phones",
+        "label": "Phones"
+    },
+    {
+        "key": "tablets",
+        "label": "Tablets"
+    },
+    {
+        "key": "promotions",
+        "label": "Promotions"
+    },
+    {
+        "key": "home",
+        "label": "Home"
+    }
+]

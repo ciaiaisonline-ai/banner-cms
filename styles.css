@@ -1,0 +1,358 @@
+/* =========================================================
+   Banner CMS UI (Clean Card Style)
+   - Inspired by provided screenshots
+   - Bootstrap 5 compatible
+   ========================================================= */
+
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e5e7eb;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06);
+  --radius: 20px;
+}
+
+html, body { height: 100%; }
+body{
+  font-family: 'Kanit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ---------- Layout helpers ---------- */
+.container{
+  max-width: 1200px;
+}
+
+.card-panel{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+      max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title{
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0;
+}
+.section-subtitle{
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Top bar ---------- */
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 14px;
+}
+.topbar .brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.topbar .brand .brand-icon{
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display:grid;
+  place-items:center;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+.topbar .brand h1{
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+}
+.badge-approval{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: 1px solid #fde68a;
+  background: #fff7ed;
+  color: #b45309;
+}
+
+/* ---------- Buttons ---------- */
+.btn{
+  border-radius: 12px;
+}
+.btn-primary{
+  background:#111827;
+  border-color:#111827;
+}
+.btn-primary:hover{
+  background:#0b1220;
+  border-color:#0b1220;
+}
+.btn-outline-secondary{
+  border-color: var(--border);
+  color: #111827;
+  background:#fff;
+}
+.btn-outline-secondary:hover{
+  background:#f3f4f6;
+  border-color: #d1d5db;
+  color:#111827;
+}
+.btn-sm{
+  padding: .45rem .7rem;
+}
+
+/* ---------- Tabs (pills) ---------- */
+.nav-pills{
+  background:#f3f4f6;
+  border-radius: 14px;
+  padding: 6px;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.nav-pills .nav-link{
+  border-radius: 999px;
+  color:#111827;
+  background: transparent;
+  padding: .38rem .75rem;
+  font-weight: 500;
+}
+.nav-pills .nav-link.active{
+
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+/* ---------- Tables ---------- */
+.table{
+  margin-bottom: 0;
+}
+.table thead th{
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+.table tbody td{
+  border-top: 1px solid var(--border);
+  vertical-align: middle;
+}
+.table-hover tbody tr:hover{
+  background: #fafafa;
+}
+
+.thumb{
+  width: 86px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  background:#fff;
+}
+
+/* ---------- Drag & Drop ---------- */
+.draggable-row{ cursor: grab; }
+.draggable-row.dragging{ opacity: .6; }
+.drag-handle{ cursor: grab; user-select: none; }
+.drop-target td{ background: #f5f5f5; }
+.drop-highlight td{ animation: rowFlash 0.8s ease-in-out 1; }
+@keyframes rowFlash{
+  0%{ background: #eafff0; }
+  50%{ background: #c8f7d8; }
+  100%{ background: transparent; }
+}
+
+/* ---------- Status pills ---------- */
+.status-pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  background:#f9fafb;
+  color:#111827;
+}
+.status-pill.success{
+  border-color:#bbf7d0;
+  background:#ecfdf5;
+  color:#047857;
+}
+.status-pill.pending{
+  border-color:#fed7aa;
+  background:#fff7ed;
+  color:#b45309;
+}
+.status-pill.danger{
+  border-color:#fecaca;
+  background:#fef2f2;
+  color:#b91c1c;
+}
+
+/* ---------- Switch (compact) ---------- */
+.form-switch .form-check-input{
+  width: 42px;
+  height: 22px;
+}
+
+/* ---------- Dropdown action (3 dots) ---------- */
+.action-btn{
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display:grid;
+  place-items:center;
+  border: 1px solid var(--border);
+  background:#fff;
+}
+.action-btn:hover{
+  background:#f3f4f6;
+}
+.dropdown-menu{
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.dropdown-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* ---------- Admin layout ---------- */
+.admin-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 992px){
+  .admin-grid{
+            grid-template-columns: 3fr .9fr;
+    align-items:start;
+  }
+}
+
+.segment-tabs{
+  background:#f3f4f6;
+  border-radius: 14px;
+  padding: 6px;
+  display:flex;
+  gap:6px;
+}
+.segment-tabs .btn{
+  border-radius: 999px;
+  padding: .35rem .7rem;
+  font-weight: 500;
+  border: 0;
+  background: transparent;
+}
+.segment-tabs .btn.active,
+.segment-tabs .btn-check:checked + .btn{
+  background:#fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+/* ---------- Small tweaks ---------- */
+.alert{
+  border-radius: 14px;
+}
+input#fieldDesktopPath,input#fieldMobilePath{ font-size: 0.78rem; }
+img.upload-preview-img{ max-height: 120px; border-radius: 12px; border:1px solid var(--border); }
+
+/* ---------- Preview modal ---------- */
+.preview-modal{ border-radius: 16px; overflow: hidden; }
+.preview-toggle{ display:inline-flex; gap:8px; padding:6px; background:#f3f4f6; border-radius: 14px; }
+.preview-toggle-btn{ border:0; background:transparent; padding:8px 12px; border-radius: 12px; font-weight: 500; display:inline-flex; align-items:center; gap:8px; }
+.preview-toggle-btn.active{ background:#fff; border:1px solid var(--border); box-shadow: 0 1px 2px rgba(15,23,42,0.06); }
+.preview-img-wrap{ background:#fff; border:1px solid var(--border); border-radius: 16px; padding: 12px; margin: 12px 0 10px; }
+.preview-img-wrap img{ width:100%; border-radius: 14px; display:block; object-fit: cover; }
+.preview-img-wrap.mode-mobile{ padding: 14px; }
+.preview-img-wrap.mode-mobile img{ width: 100%; max-width: 520px; margin: 0 auto; }
+.preview-kv{ margin-top: 6px; border-top: 1px solid var(--border); }
+.preview-row{ display:grid; grid-template-columns: 140px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.preview-row .label{ color:#6b7280; }
+.preview-row .value{ text-align:right; color:#111827; word-break: break-word; }
+.preview-row .value a{ color:#111827; text-decoration: none; }
+.preview-row .value a:hover{ text-decoration: underline; }
+
+
+/* ---------- Banner modal (Add/Edit) ---------- */
+.banner-modal-body{
+  background: var(--bg);
+}
+#bannerModal .modal-content{
+  border-radius: 16px;
+overflow: scroll;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+#bannerModal .modal-header,
+#bannerModal .modal-footer{
+  background:#fff;
+}
+#bannerModal .modal-header{
+  border-bottom: 1px solid var(--border);
+}
+#bannerModal .modal-footer{
+  border-top: 1px solid var(--border);
+}
+.modal-section{
+  background:#fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+}
+.modal-section-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.modal-section-title{
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+.modal-section-subtitle{
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Segment buttons inside modal */
+.segment-tabs .btn{
+  border-radius: 999px;
+  padding: .38rem .8rem;
+}
+
+/* Pages pills */
+.pages-pills .btn{
+  border-color: var(--border);
+  background: #fff;
+}
+.pages-pills .btn-check:checked + .btn{
+  background:#111827;
+  border-color:#111827;
+  color:#fff;
+}
+
+/* Upload box */
+.upload-box{
+  border: 1px dashed #d1d5db;
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 12px;
+}

@@ -1,0 +1,221 @@
+[
+    {
+        "id": "banner_1770188569_4507",
+        "title": "A07 samsung",
+        "link_url": "https://www.ais.th/consumers/",
+        "link_target": "_blank",
+        "desktop_img": "/upload/samsung-a07-5g-1600x500.jpg",
+        "mobile_img": "/upload/samsung-a07-5g-1040x1040.jpg",
+        "desktop_hash": "762f108dce503ed110a8e2ae7110c3e167200ca56455539b7f91aab46a43ca04",
+        "mobile_hash": "1145fad775f5016d65a238335f86275969b95db80042a509caef17d636d6c9b7",
+        "pages": [
+            "store",
+            "phones",
+            "tablets",
+            "promotions",
+            "home"
+        ],
+        "slot": 1,
+        "is_active": true,
+        "start_at": "",
+        "end_at": "",
+        "created_at": "2026-02-04T14:02:49+07:00",
+        "page_orders": {
+            "store": 2,
+            "phones": 1,
+            "tablets": 4,
+            "promotions": 1,
+            "home": 2
+        },
+        "order": 2,
+        "priority": "medium",
+        "ga4": {
+            "section_name": "herobanner",
+            "click_banner": "samsung-a07-5g-1040x1040"
+        },
+        "is_copy": false,
+        "approval_status": "approved",
+        "requested_at": "2026-02-04T14:02:49+07:00",
+        "approved_at": "2026-02-04T14:07:19+07:00",
+        "rejected_at": null,
+        "pending_change_summary": null,
+        "last_approved_snapshot": {
+            "title": "A07 samsung",
+            "link_url": "https://www.ais.th/consumers/",
+            "link_target": "_blank",
+            "desktop_img": "/upload/samsung-a07-5g-1600x500.jpg",
+            "mobile_img": "/upload/samsung-a07-5g-1040x1040.jpg",
+            "pages": [
+                "home",
+                "phones",
+                "promotions",
+                "store",
+                "tablets"
+            ],
+            "is_active": true,
+            "start_at": "",
+            "end_at": "",
+            "priority": "medium",
+            "ga4": {
+                "section_name": "herobanner",
+                "click_banner": "samsung-a07-5g-1040x1040"
+            },
+            "page_orders": {
+                "store": 1,
+                "phones": 1,
+                "tablets": 4,
+                "promotions": 1,
+                "home": 2
+            }
+        },
+        "last_approved_at": "2026-02-04T14:07:19+07:00",
+        "change_history": [
+            {
+                "changed_at": "2026-02-04T14:02:49+07:00",
+                "changed_by": null,
+                "action": "create",
+                "diff": null,
+                "comment": null
+            },
+            {
+                "changed_at": "2026-02-04T14:07:19+07:00",
+                "changed_by": null,
+                "action": "approve",
+                "diff": null,
+                "comment": null
+            },
+            {
+                "changed_at": "2026-02-04T14:07:19+07:00",
+                "changed_by": null,
+                "action": "edit",
+                "diff": null,
+                "comment": null
+            }
+        ]
+    },
+    {
+        "id": "banner_1770188797_4307",
+        "title": "iphone 17",
+        "link_url": "https://www.ais.th/consumers/store/tablets/honorsasas",
+        "link_target": "_blank",
+        "desktop_img": "/upload/iphone17-payday-dec-25-single-size-1600x500.jpg",
+        "mobile_img": "/upload/iphone17-payday-dec-25-single-size-1040x1040.jpg",
+        "desktop_hash": "f41f9487874adda8c17e16e438f075110ddd54db96854d49729ce90f284fa97c",
+        "mobile_hash": "b198472b64ced0b3eddd3e079c07bbf0303904c50b8cde3481a1e0cf15be8db9",
+        "pages": [
+            "store",
+            "tablets"
+        ],
+        "slot": 1,
+        "is_active": true,
+        "start_at": "2026-02-04 12:00",
+        "end_at": "2026-03-31 12:00",
+        "created_at": "2026-02-04T14:06:37+07:00",
+        "page_orders": {
+            "store": 1,
+            "tablets": 3
+        },
+        "order": 1,
+        "priority": "high",
+        "ga4": {
+            "section_name": "herobanner",
+            "click_banner": "iphone17-payday-dec-25-single-size-1040x1040"
+        },
+        "is_copy": false,
+        "approval_status": "approved",
+        "requested_at": "2026-02-04T14:06:37+07:00",
+        "approved_at": "2026-02-04T14:07:37+07:00",
+        "rejected_at": null,
+        "pending_change_summary": null,
+        "last_approved_snapshot": {
+            "title": "iphone 17",
+            "link_url": "https://www.ais.th/consumers/store/tablets/honorsasas",
+            "link_target": "_blank",
+            "desktop_img": "/upload/iphone17-payday-dec-25-single-size-1600x500.jpg",
+            "mobile_img": "/upload/iphone17-payday-dec-25-single-size-1040x1040.jpg",
+            "pages": [
+                "store",
+                "tablets"
+            ],
+            "is_active": true,
+            "start_at": "2026-02-04 12:00",
+            "end_at": "2026-03-31 12:00",
+            "priority": "high",
+            "ga4": {
+                "section_name": "herobanner",
+                "click_banner": "iphone17-payday-dec-25-single-size-1040x1040"
+            },
+            "page_orders": {
+                "store": 2,
+                "tablets": 3
+            }
+        },
+        "last_approved_at": "2026-02-04T14:07:37+07:00",
+        "change_history": [
+            {
+                "changed_at": "2026-02-04T14:06:37+07:00",
+                "changed_by": null,
+                "action": "create",
+                "diff": null,
+                "comment": null
+            },
+            {
+                "changed_at": "2026-02-04T14:06:57+07:00",
+                "changed_by": null,
+                "action": "edit",
+                "diff": [
+                    {
+                        "field": "pages",
+                        "before": [
+                            "home",
+                            "phones",
+                            "promotions",
+                            "store"
+                        ],
+                        "after": [
+                            "home",
+                            "phones",
+                            "promotions",
+                            "store",
+                            "tablets"
+                        ],
+                        "change_type": "update",
+                        "note": "+tablets"
+                    },
+                    {
+                        "field": "page_orders",
+                        "before": {
+                            "store": 2,
+                            "phones": 2,
+                            "promotions": 2,
+                            "home": 1
+                        },
+                        "after": {
+                            "store": 2,
+                            "phones": 2,
+                            "tablets": 3,
+                            "promotions": 2,
+                            "home": 1
+                        },
+                        "change_type": "update"
+                    }
+                ],
+                "comment": null
+            },
+            {
+                "changed_at": "2026-02-04T14:07:37+07:00",
+                "changed_by": null,
+                "action": "approve",
+                "diff": null,
+                "comment": null
+            },
+            {
+                "changed_at": "2026-02-04T14:07:37+07:00",
+                "changed_by": null,
+                "action": "edit",
+                "diff": null,
+                "comment": null
+            }
+        ]
+    }
+]

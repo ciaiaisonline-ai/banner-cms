@@ -1,0 +1,120 @@
+
+    .hero-slider-wrapper {
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+
+    /* TRACK สำหรับเลื่อนซ้าย-ขวา */
+.hero-slider-inner {
+  display: flex;
+  width: 100%;
+  /* เพิ่ม duration + ใช้ cubic-bezier ให้นุ่มขึ้น */
+  transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+
+    .hero-slide {
+      position: relative;
+      flex: 0 0 100%;
+      /* ไม่ต้อง display:none แล้ว ให้แสดงทุก slide แล้วเลื่อนทั้งแทร็กแทน */
+    }
+
+    .hero-slide a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .hero-slide picture,
+    .hero-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-slide-caption {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      padding: 6px 10px;
+      background: rgba(0,0,0,.45);
+      color: #fff;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    /* arrows */
+/* arrows */
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8); /* พื้นหลังขาว โปร่ง 80% */
+  color: #666666;                    /* สีลูกศร เทา */
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.hero-arrow:hover {
+  background: rgba(255,255,255,1);   /* hover ขาวทึบ */
+  color: #333333;                    /* เทาเข้มขึ้นนิดหน่อย */
+}
+
+
+    .hero-arrow.prev { left: 12px; }
+    .hero-arrow.next { right: 12px; }
+
+    /* dots */
+    .hero-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 6;
+    }
+
+/* dots */
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.4);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all .25s ease;
+}
+
+.hero-dot.active {
+  background: #73c23a;   /* สี AIS */
+  width: 24px;           /* ขยายความกว้าง */
+  height: 10px;          /* ให้เป็นเม็ดแคปซูล */
+  border-radius: 12px;   /* มุมโค้ง */
+}
+
+.hero-slide-caption {
+    display: none;
+}
+    @media (max-width: 768px) {
+      .hero-arrow {
+        width: 30px;
+        height: 30px;
+      }
+      .hero-slide-caption {
+        font-size: 12px;
+        left: 10px;
+        bottom: 10px;
+      }
+    }
