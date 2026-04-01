@@ -11,14 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v4 # อัปเดตเป็น v4
+      uses: actions/checkout@v4
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5 # อัปเดตเป็น version ล่าสุด
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /site/wwwroot/ton/banner-cms/
-        protocol: ftp
+        # --- การตั้งค่าสำหรับ Azure FTPS Port 990 ---
+        protocol: ftps
         port: 990
+        ftp-ssl: true
